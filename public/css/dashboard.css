@@ -1,1 +1,126 @@
+/* --- Reset / básico --- */
+* { box-sizing: border-box; }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #e9f7ee, #d8f3dc);
+  margin: 0;
+  min-height: 100vh;
+  color: #163b2b;
+}
+
+/* Navbar (mantive sua ideia com cores ajustadas) */
+nav {
+  width: 100%;
+  background-color: #1f6b3a; /* verde escuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+/* Logo */
+nav .logo { font-size: 1.6em; font-weight: 700; }
+nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; align-items:center; }
+nav ul li a { color: white; text-decoration: none; font-weight: 500; }
+
+/* Header */
+header {
+  text-align: center;
+  padding: 36px 10px 20px;
+  background: #3aa14a; /* faixa verde */
+  color: #083016;
+  border-bottom: 4px solid rgba(0,0,0,0.06);
+}
+header h1 { margin: 0; font-size: 2.2rem; font-weight: 800; }
+header p { margin: 6px 0 0; color: rgba(7,48,24,0.7); }
+
+/* Missoes container */
+.missoes-container {
+  padding: 28px 18px 80px;
+}
+
+/* Content wrapper: main + aside */
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+/* Main area (conteúdo principal) */
+.main-content {
+  flex: 1 1 700px;
+  background: linear-gradient(180deg, #f6fff4 0%, #eafbe7 100%);
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* Cada missão */
+.missao {
+  background: #ffffff;
+  border-left: 6px solid #59a96a;
+  padding: 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+}
+.missao p { color: #234f36; font-size: 15px; margin: 0 0 10px; }
+.botao {
+  padding: 10px 14px;
+  background: linear-gradient(90deg,#4faf6a,#2f8a53);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.botao:hover { transform: translateY(-2px); }
+
+/* Aside: lado direito */
+.right {
+  width: 320px;
+  position: sticky;   /* fica preso quando rola, sem sobrepor header */
+  top: calc( (var(--nav-height, 72px)) + 18px ); /* evita sobreposição com nav/header */
+  align-self: flex-start;
+  height: fit-content;
+}
+.right .aside-inner {
+  background: linear-gradient(180deg,#cfece0,#dbeff6);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: -6px 6px 18px rgba(0,0,0,0.05);
+  color: #0e3a2a;
+}
+.right h3, .right h4 { margin: 6px 0 12px; color: #164032; }
+.right ul { padding-left: 18px; margin: 0 0 12px 0; color: #0a2e1f; }
+.right a { color: #0b6b4a; font-weight: 700; text-decoration: underline; }
+
+/* Mensagem de todas concluídas */
+.todas-concluidas {
+  text-align: center;
+  color: #3b6b4a;
+  font-weight: 700;
+  padding: 24px 0;
+}
+
+/* Responsivo: em telas pequenas, empilhamos (aside volta ao fluxo) */
+@media (max-width: 980px) {
+  .content-wrapper { flex-direction: column; padding: 0 18px; }
+  .right { position: static; width: 100%; margin-top: 18px; }
+  .right .aside-inner { width: 100%; }
+  .main-content { padding: 18px; }
+}
+
+/* Pequenos toques visuais */
+.missao:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.06); transition: 0.18s ease; }
+
 
