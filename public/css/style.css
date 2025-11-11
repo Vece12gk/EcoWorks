@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --verde: #4CAF50;
+  --verde-escuro: #2E7D32;
+  --branco: #FFFFFF;
+  --bege: #F5F5DC;
+  --marrom: #6D4C41;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--bege);
+  color: var(--marrom);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--verde);
+  color: var(--branco);
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 5px solid var(--verde-escuro);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.botoes {
+  margin-top: 20px;
+}
+
+.botao {
+  background-color: var(--branco);
+  color: var(--verde-escuro);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+}
+
+.botao.marrom {
+  background-color: var(--marrom);
+  color: var(--branco);
+}
+
+section.intro {
+  text-align: center;
+  padding: 40px;
+  max-width: 700px;
+}
+
+section.ranking {
+  margin-top: 40px;
+  background-color: var(--branco);
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--verde);
+  color: var(--branco);
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--bege);
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+section.perfil {
+  background-color: var(--branco);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section.perfil h2 {
+  color: var(--verde-escuro);
+  margin-bottom: 10px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--branco);
+  font-weight: 600;
+}
+
+.badge.verde {
+  background-color: var(--verde);
+}
+
+.badge.marrom {
+  background-color: var(--marrom);
+}
+
+.badge.verde-escuro {
+  background-color: var(--verde-escuro);
+}
+
+.badge.dourado {
+  background-color: #d4af37;
+  color: #fff8e1;
+}
+
+.historico ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.historico li {
+  background-color: var(--bege);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
