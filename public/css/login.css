@@ -1,0 +1,106 @@
+body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #d8f3dc, #b7e4c7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    header h1 {
+      color: #2d6a4f;
+      font-size: 2em;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .formulario {
+      background: #ffffff;
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(45, 106, 79, 0.2);
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      border-top: 5px solid #74c69d;
+      transition: all 0.3s ease;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .formulario:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 22px rgba(45, 106, 79, 0.25);
+    }
+
+    .formulario input {
+      padding: 11px;
+      font-size: 15px;
+      border: 1px solid #a3b18a;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .formulario input:focus {
+      border-color: #40916c;
+      box-shadow: 0 0 6px rgba(64, 145, 108, 0.4);
+    }
+
+    .botao {
+      padding: 12px;
+      background: linear-gradient(to right, #52b788, #40916c);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      background: linear-gradient(to right, #74c69d, #2d6a4f);
+      transform: scale(1.03);
+    }
+
+    .formulario::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: rgba(100, 200, 150, 0.1);
+      border-radius: 50%;
+      top: -25px;
+      right: -25px;
+      z-index: -1;
+    }
+
+    .help-row {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #2d6a4f;
+      margin-top: 8px;
+    }
+
+    .error-msg {
+      color: #b71c1c;
+      background: #ffebeb;
+      border: 1px solid #f2c2c2;
+      padding: 8px 10px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .register-link {
+      color: #1b5e20;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 6px;
+    }
+
+    .register-link:hover { text-decoration: underline; }
