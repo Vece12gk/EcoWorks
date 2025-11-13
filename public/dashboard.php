@@ -99,25 +99,19 @@ if ($result && $result->num_rows > 0) {
 
     <aside class="right">
       <div class="aside-inner">
-        <h3>Equipe composta por:</h3>
+        
+        
+        <h4> Dicas para Aproveitar ao Máximo:</h4>
         <ul>
-          <li>04 cuidadores, os quais são técnicos de enfermagem.</li>
-        </ul>
-
-        <h4>Os responsáveis pela equipe técnica são:</h4>
-        <ul>
-          <li>01 Enfermeira Padrão</li>
-          <li>01 Assistente Social</li>
-          <li>01 Cozinheira</li>
-          <li>01 Cuidador apoio aos finais de semana</li>
-          <li>01 Apoio cuidador(a) das 13 as 20.30</li>
-          <li>01 Auxiliar geral</li>
-          <li>Quartos coletivos masculinos e femininos</li>
-          <li>Banheiro masculino e banheiro feminino</li>
-          <li>Área externa coberta / descoberta</li>
-          <li>06 refeições diárias</li>
-          <li>Visitas diárias das 13:30 as 17:30h</li>
-          <li>Atendimento Humanizado e familiar.</li>
+          <li>1. Entre todos os dias</li>
+          <li>2. Complete e registre suas missões</li>
+          <li>3. Acompanhe seu progresso</li>
+          <li>4. Inspire outras pessoas</li>
+          <li>5. Colecione selos e suba de nível</li>
+          <li>6. Volte sempre!</li>
+          <li>No EcoTarefas, o seu compromisso com o meio ambiente é reconhecido, recompensado e compartilhado.</li>
+          <li>Cada clique, cada missão, cada ponto... é uma semente plantada em prol de um mundo mais verde e consciente.</li>
+          <li>“Pequenas ações, quando somadas, transformam o mundo.”</li>
         </ul>
 
         <p>Para entretenimento. <a href="mariogame.htm">Clique aqui para jogar.</a></p>
