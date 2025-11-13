@@ -113,8 +113,6 @@ if ($result && $result->num_rows > 0) {
           <li>Cada clique, cada missão, cada ponto... é uma semente plantada em prol de um mundo mais verde e consciente.</li>
           <li>“Pequenas ações, quando somadas, transformam o mundo.”</li>
         </ul>
-
-        <p>Para entretenimento. <a href="mariogame.htm">Clique aqui para jogar.</a></p>
       </div>
     </aside>
   </div>
