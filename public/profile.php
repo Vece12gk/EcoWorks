@@ -98,6 +98,66 @@ if ($foundTable) {
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/profile.css">
 </head>
+<style>
+  /* Estilo do footer */
+        footer {
+            background-color: #388E3C; /* Verde escuro */
+            color: white;
+            padding: 30px 0;
+            margin-top: 40px;
+            border: 2px solid #A5D6A7; /* Borda visível */
+            box-shadow: 
+                0 0 5px #C8E6C9,
+                0 0 10px #C8E6C9,
+                0 0 20px #81C784,
+                0 0 40px #66BB6A;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            color: #C8E6C9; /* Verde claro */
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            border-bottom: 2px solid #66BB6A;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p, .footer-section ul {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        .footer-section a {
+            color: #E8F5E9;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #66BB6A;
+            margin-top: 15px;
+            font-size: 0.8em;
+            width: 100%;
+        }
+</style>
 <body>
   <!-- Navbar -->
   <nav>
@@ -152,5 +212,33 @@ if ($foundTable) {
       </ul>
     </div>
   </section>
+  <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🌎 Sobre o EcoTarefas</h4>
+                <p>Somos uma plataforma de gamificação que transforma o cuidado com o meio ambiente em uma experiência divertida e recompensadora. Junte-se a nós!</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Links Rápidos</h4>
+                <ul>
+                    <li><a href="dashboard.php">Missões</a></li>
+                    <li><a href="ranking.php">Ranking</a></li>
+                    <li><a href="profile.php">Meu Perfil</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📞 Contato</h4>
+                <p>Email: contato@ecotarefas.com</p>
+                <p>Siga-nos: <a href="https://www.instagram.com/pauloh_1808/">pauloh_1808</a> | <a href="https://www.instagram.com/natanvece/">natanvece</a></p>
+                <p>Localização: São Paulo, Brasil</p>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; <?php echo date("Y"); ?> EcoTarefas. Todos os direitos reservados. | Desenvolvido com amor pelo Planeta.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
