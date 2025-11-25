@@ -123,4 +123,61 @@ header p { margin: 6px 0 0; color: rgba(7,48,24,0.7); }
 /* Pequenos toques visuais */
 .missao:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.06); transition: 0.18s ease; }
 
+/* Estilo do footer */
+        footer {
+            background-color: #388E3C; /* Verde escuro */
+            color: white;
+            padding: 30px 0;
+            margin-top: 40px;
+            border: 2px solid #A5D6A7; /* Borda visível */
+            box-shadow: 
+                0 0 5px #C8E6C9,
+                0 0 10px #C8E6C9,
+                0 0 20px #81C784,
+                0 0 40px #66BB6A;
+        }
 
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .footer-section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4 {
+            color: #C8E6C9; /* Verde claro */
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            border-bottom: 2px solid #66BB6A;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p, .footer-section ul {
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        .footer-section a {
+            color: #E8F5E9;
+            text-decoration: none;
+        }
+        
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 1px solid #66BB6A;
+            margin-top: 15px;
+            font-size: 0.8em;
+            width: 100%;
+        }
