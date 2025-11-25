@@ -128,5 +128,33 @@ if ($result && $result->num_rows > 0) {
     <p>🎉 Todas as missões de hoje foram concluídas! Parabéns!</p>
   <?php } ?>
   </section>
+  <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🌎 Sobre o EcoTarefas</h4>
+                <p>Somos uma plataforma de gamificação que transforma o cuidado com o meio ambiente em uma experiência divertida e recompensadora. Junte-se a nós!</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Links Rápidos</h4>
+                <ul>
+                    <li><a href="dashboard.php">Missões</a></li>
+                    <li><a href="ranking.php">Ranking</a></li>
+                    <li><a href="profile.php">Meu Perfil</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📞 Contato</h4>
+                <p>Email: contato@ecotarefas.com</p>
+                <p>Siga-nos: <a href="https://www.instagram.com/pauloh_1808/">pauloh_1808</a> | <a href="https://www.instagram.com/natanvece/">natanvece</a></p>
+                <p>Localização: São Paulo, Brasil</p>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; <?php echo date("Y"); ?> EcoTarefas. Todos os direitos reservados. | Desenvolvido com amor pelo Planeta.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
